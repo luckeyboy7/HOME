@@ -26,6 +26,7 @@ app.title ='Test HomePage';
 var indexPage = require('./routes/index.js')(app);
 var indexPage = require('./routes/member/join.js')(app);
 
+
 var webServer = app.listen(app.get('port'), function(){
 	console.log('Express server listening on port ' + app.get('port'));
 });
