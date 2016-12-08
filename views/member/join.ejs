@@ -1,0 +1,32 @@
+<%include ../_include/header_html.ejs%>
+		<h1><%= title %></h1>
+		<p>Register as a member </p>
+		<form name="memJoinForm" id="memJoinForm" method="post" action="" onsubmit="return false;">
+		<table style="width:400px;">
+			<col style="width:100px;" />
+			<col style="width:*;" />
+			<tr>
+				<td>Id</td>
+				<td><input name ="userId" id="userId" type="text" maxlength="20" value="" /></td>
+			</tr>
+			<tr>
+				<td>PassWord</td>
+				<td><input name ="userPassWord" id="userPassWord" type="password" maxlength="20" value="" /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input name ="userPassWordCheck" id="userPassWordCheck" type="password" maxlength="20" value="" /></td>
+			</tr>
+			<tr>
+				<td>eMail</td>
+				<td><input name ="userEmail" id="userEmail" type="text" maxlength="50" value="" /></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align:center;">
+					<input name ="submitBtn" id="submitBtn" type="submit" value="agree" />
+					<input name ="backBtn" id="backBtn" type="button" value="back" onclick="history.back();" />
+				</td>
+			</tr>
+		</table>
+		</form>
+<%include ../_include/footer_html.ejs%>
