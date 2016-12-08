@@ -20,7 +20,7 @@ app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.title ='Test HomePage'; 
+app.title ='Test HomePage2'; 
 
 
 var indexPage = require('./routes/index.js')(app);
