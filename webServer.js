@@ -30,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //[S]db connection
 var db = mongoose.connection;
 db.on('error',console.error);
-dbo.once('open',function(){
+db.once('open',function(){
 	console.log('Connected to mongodb server');
 });
 
